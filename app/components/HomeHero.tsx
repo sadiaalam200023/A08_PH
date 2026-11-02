@@ -90,7 +90,7 @@ const HomeHero = () => {
                   </Link>
 
                   <Link
-                    href="/studios"
+                    href="/add-studio"
                     className="btn min-h-11 rounded-md border border-white/70 bg-transparent px-5 text-sm font-semibold text-white shadow-none hover:border-white hover:bg-white hover:text-[#34332E] sm:px-6"
                   >
                     Host Your Space
