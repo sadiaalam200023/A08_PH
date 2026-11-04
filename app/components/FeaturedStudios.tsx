@@ -32,19 +32,16 @@ export default async function FeaturedStudios() {
   const studios = await getFeaturedStudios();
 
   return (
-    <section className="bg-[#FAF9F6] px-5 py-16">
+    <section className="bg-[#FAF9F6] px-5 py-8">
       <div className="mx-auto max-w-7xl">
 
         <div className="mb-10">
-          <p className="text-sm uppercase tracking-widest text-[#98745B]">
-            Handpicked spaces
-          </p>
-
-          <h2 className="mt-2 text-3xl font-semibold text-[#302820]">
+         
+          <h2 className="mt-2 text-3xl text-center font-semibold text-[#302820]">
             Featured Studios
           </h2>
 
-          <p className="mt-3 text-[#77716B]">
+          <p className="mt-3 text-[#77716B] text-center">
             Discover creative spaces for your next project.
           </p>
         </div>
