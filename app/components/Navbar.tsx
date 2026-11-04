@@ -52,7 +52,7 @@ const Navbar = () => {
      
       <div className="navbar-end hidden gap-3 md:flex">
         <Link
-          href="/login"
+          href="/sign-in"
           className="btn btn-ghost btn-sm rounded-full text-[#34332E]"
         >
           Login
@@ -107,7 +107,7 @@ const Navbar = () => {
             </li>
             <li>
               <Link
-                href="/register"
+                href="/sign-up"
                 className="bg-[#B47A52] text-white hover:bg-[#96613F]"
               >
                 Register
