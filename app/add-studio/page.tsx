@@ -81,7 +81,7 @@ console.log(result);
       amenities,
     };
 
-    // Temporary: check the submitted data in the browser console
+    
     console.log("Studio information:", studioData);
 
     setTimeout(() => {
