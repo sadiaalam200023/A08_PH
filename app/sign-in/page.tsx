@@ -74,12 +74,7 @@ export default function SignInPage() {
 
         {/* Heading */}
         <div className="text-center mb-8">
-          <Link
-            href="/"
-            className="text-3xl font-bold text-[#96613F]"
-          >
-            StudioSpace
-          </Link>
+         
 
           <h1 className="text-2xl font-semibold text-gray-800 mt-6">
             Welcome back!

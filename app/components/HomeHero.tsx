@@ -57,7 +57,7 @@ const HomeHero = () => {
         {slides.map((slide, index) => (
           <SwiperSlide key={index}>
             <div
-              className="relative flex min-h-[440px] items-center bg-cover bg-center px-5 py-12 sm:min-h-[500px] sm:px-10 md:min-h-[550px] md:px-16 lg:px-20"
+              className="relative flex min-h-110 items-center bg-cover bg-center px-5 py-12 sm:min-h-125 sm:px-10 md:min-h-[550px] md:px-16 lg:px-20"
               style={{
                 backgroundImage: `linear-gradient(to right, rgba(0,0,0,0.75), rgba(0,0,0,0.25)), url(${slide.image})`,
               }}
@@ -83,7 +83,7 @@ const HomeHero = () => {
                 <div className="flex flex-col gap-3 min-[400px]:flex-row sm:gap-4">
 
                   <Link
-                    href="/studios"
+                    href="/allstudios"
                     className="btn min-h-11 rounded-md border-none bg-[#F8F7F4] px-5 text-sm font-semibold text-[#34332E] shadow-none hover:bg-[#B47A52] hover:text-white sm:px-6"
                   >
                     Explore Studios

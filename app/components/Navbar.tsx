@@ -107,9 +107,16 @@ export default function Navbar() {
 
                 <li>
                   <Link href="/profile">
-                    Update Information
+                    Update Profile Information
                   </Link>
                 </li>
+               
+                  <li>
+  <Link href="/my-listings">
+    My Listings
+  </Link>
+</li>
+                
 
                 <li>
                   <button
@@ -229,8 +236,14 @@ export default function Navbar() {
                 onClick={() => setIsMenuOpen(false)}
                 className="block py-2 text-[#5B5148] hover:text-[#B47A52]"
               >
-                Update Information
+                Update Profile Information
               </Link>
+
+  <li>
+  <Link href="/my-listings">
+    My Listings
+  </Link>
+</li>
 
               <button
                 type="button"
