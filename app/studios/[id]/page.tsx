@@ -82,7 +82,7 @@ export default function StudioDetailsPage() {
         <div className="mx-auto max-w-6xl animate-pulse space-y-8">
           <div className="h-4 w-32 rounded bg-[#EAE4DC]" />
           <div className="h-10 w-2/3 rounded bg-[#EAE4DC]" />
-          <div className="h-[400px] rounded-2xl bg-[#EAE4DC]" />
+          <div className="h-100 rounded-2xl bg-[#EAE4DC]" />
           <div className="grid gap-8 md:grid-cols-3">
             <div className="h-48 rounded-2xl bg-[#EAE4DC] md:col-span-2" />
             <div className="h-48 rounded-2xl bg-[#EAE4DC]" />
@@ -153,10 +153,10 @@ export default function StudioDetailsPage() {
             <img
               src={studio.image}
               alt={studio.title}
-              className="h-[280px] w-full object-cover sm:h-[420px] lg:h-[500px]"
+              className="h-70 w-full object-cover sm:h-105 lg:h-125"
             />
           ) : (
-            <div className="flex h-[280px] items-center justify-center bg-[#EAE4DC] text-[#806047] sm:h-[420px]">
+            <div className="flex h-70 items-center justify-center bg-[#EAE4DC] text-[#806047] sm:h-105">
               No studio image available
             </div>
           )}

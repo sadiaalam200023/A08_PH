@@ -11,7 +11,7 @@ import { toast } from "react-toastify";
 
 const navLinks = [
   { name: "Home", href: "/" },
-  { name: "Studios", href: "/studios" },
+  { name: "Studios", href: "/allstudios" },
   { name: "About", href: "/about" },
 ];
 
