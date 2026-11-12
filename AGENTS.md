@@ -22,7 +22,7 @@ Next.js App Router marketplace for discovering and booking creative studios. Sin
 
 ## External studio API (not in this repo)
 
-- Studio data comes from a separate backend at `http://localhost:8000`, hardcoded in:
+- Studio data comes from a separate backend at `http://{process.env.NEXT_PUBLIC_API_URL}, hardcoded in:
   - `app/components/FeaturedStudios.tsx` — server-side `GET /featured-studios`
   - `app/studios/[id]/page.tsx` — client-side `GET /studios/:id`
   - `app/add-studio/page.tsx` — client-side `POST /add-studios`

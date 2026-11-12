@@ -7,7 +7,7 @@ import { authClient } from "@/app/lib/auth-client";
 import { toast } from "react-toastify";
 
 const API_URL =
-  process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
+  process.env.NEXT_PUBLIC_API_URL;
 
 interface Studio {
   _id: string;

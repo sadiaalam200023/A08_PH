@@ -101,7 +101,7 @@ export default function AddStudioPage() {
       };
 
       const res = await fetch(
-        `${process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000"}/add-studios`,
+        `${process.env.NEXT_PUBLIC_API_URL}/add-studios`,
         {
           method: "POST",
           headers: {

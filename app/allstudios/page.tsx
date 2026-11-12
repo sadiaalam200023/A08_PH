@@ -43,7 +43,7 @@ export default function AllStudiosPage() {
     const fetchStudios = async () => {
       try {
         const response = await fetch(
-          `${process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000"}/all-studios`
+          `${process.env.NEXT_PUBLIC_API_URL }/all-studios`
         );
 
         if (!response.ok) {

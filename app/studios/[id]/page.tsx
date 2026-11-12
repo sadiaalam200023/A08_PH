@@ -41,7 +41,7 @@ export default function StudioDetailsPage() {
         setError("");
 
         const res = await fetch(
-          `http://localhost:8000/studios/${params.id}`,
+          `${process.env.NEXT_PUBLIC_API_URL}/studios/${params.id}`,
           { cache: "no-store" }
         );
 
