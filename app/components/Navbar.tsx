@@ -118,7 +118,12 @@ export default function Navbar() {
     My Listings
   </Link>
 </li>
-                
+            
+                  <li>
+  <Link href="/my-bookings">
+    My bookings
+  </Link>
+</li>    
 
                 <li>
                   <button
@@ -244,6 +249,11 @@ export default function Navbar() {
   <li>
   <Link href="/my-listings">
     My Listings
+  </Link>
+</li>
+<li>
+  <Link href="/my-bookings">
+    My Bookings
   </Link>
 </li>
 

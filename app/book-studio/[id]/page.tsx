@@ -59,7 +59,7 @@ export default function BookingPage() {
     if (isPending) return;
 
     if (!user) {
-      router.push("/login");
+      router.push("/sign-in");
       return;
     }
 

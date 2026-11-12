@@ -77,10 +77,10 @@ export default function AllStudiosPage() {
 
   const handleViewDetails = (id: string) => {
     if (isPending) return;
-
+//
     if (!session) {
       router.push(
-        `/login?callbackURL=${encodeURIComponent(`/studios/${id}`)}`
+        `/sign-in`
       );
       return;
     }
