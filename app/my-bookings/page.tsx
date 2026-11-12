@@ -44,7 +44,7 @@ export default function MyBookingsPage() {
     if (isPending) return;
 
     if (!user?.email) {
-      router.push("/login");
+      router.push("/sign-in");
       return;
     }
 
