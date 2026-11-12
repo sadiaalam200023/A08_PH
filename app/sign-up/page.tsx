@@ -185,14 +185,6 @@ export default function SignUpPage() {
             Continue with Google
           </button>
 
-          <button
-            type="button"
-            onClick={() => handleSocialSignUp("github")}
-            className="btn btn-outline w-full bg-white text-gray-700 border-gray-300 hover:bg-gray-100"
-          >
-            Continue with GitHub
-          </button>
-
         </div>
 
         {/* Sign-in Link */}

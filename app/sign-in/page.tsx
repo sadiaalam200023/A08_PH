@@ -147,13 +147,13 @@ export default function SignInPage() {
             Continue with Google
           </button>
 
-          <button
+          {/* <button
             type="button"
             onClick={() => handleSocialSignIn("github")}
             className="btn btn-outline w-full bg-white text-gray-700 border-gray-300 hover:bg-gray-100"
           >
             Continue with GitHub
-          </button>
+          </button> */}
 
         </div>
 

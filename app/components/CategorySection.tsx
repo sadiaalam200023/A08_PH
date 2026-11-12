@@ -30,7 +30,7 @@ const categories = [
 
 export default function CategorySection() {
   return (
-    <section className="bg-[#FAF9F6] px-5 pt-2 pb-2">
+    <section className="bg-[#F0EBE4] px-5 py-10 mb-2 mt-2">
       <div className="mx-auto max-w-7xl">
 
         {/* Heading */}
