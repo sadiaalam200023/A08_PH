@@ -76,7 +76,7 @@ export default function MyListingsPage() {
 
   // Navigate to the edit form
   const handleUpdate = (studioId: string) => {
-    router.push(`/studios/edit/${studioId}`);
+    router.push(`/upstudios/${studioId}`);
   };
 
   // Delete selected studio
@@ -285,9 +285,10 @@ export default function MyListingsPage() {
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 px-4">
           <div className="w-full max-w-md rounded-2xl bg-white p-7 shadow-xl">
 
-            <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-red-50 text-xl text-red-600">
-              !
-            </div>
+        <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-red-300  text-xl text-red-600">
+  !
+</div>
+
 
             <h2 className="text-xl font-semibold text-[#302820]">
               Delete Studio Listing?
