@@ -1,9 +1,10 @@
 "use client";
 
+
 import { useEffect, useState } from "react";
 import { useParams } from "next/navigation";
 import Link from "next/link";
-
+import { useRouter } from "next/navigation";
 interface Studio {
   _id: string;
   title: string;
@@ -74,7 +75,7 @@ export default function StudioDetailsPage() {
   const securityDeposit = Number(studio?.securityDeposit ?? 0);
   const rentalCost = hourlyRate * hours;
   const totalEstimate = rentalCost + securityDeposit;
-
+const router = useRouter();
   // Loading state
   if (loading) {
     return (
@@ -313,11 +314,17 @@ export default function StudioDetailsPage() {
               </div>
 
               <button
-                onClick={() => setShowBookingModal(true)}
-                className="btn mt-7 w-full border-0 bg-[#98745B] text-white hover:bg-[#806047]"
-              >
-                Book studio
-              </button>
+  onClick={() => {
+    setShowBookingModal(false);
+
+    router.push(
+      `/book-studio/${studio._id}?date=${bookingDate}&hours=${hours}`
+    );
+  }}
+  className="btn w-full border-0 bg-[#98745B] text-white hover:bg-[#806047]"
+>
+  Continue to Booking
+</button>
 
              
             </div>
@@ -410,7 +417,7 @@ export default function StudioDetailsPage() {
                 onClick={() => setShowBookingModal(false)}
                 className="btn w-full border-0 bg-[#98745B] text-white hover:bg-[#806047]"
               >
-               Confirm Booking
+              Make a Booking
               </button>
 
               
